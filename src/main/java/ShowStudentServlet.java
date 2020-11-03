@@ -14,10 +14,8 @@ public class ShowStudentServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         String name = request.getParameter("name");
-        out.println("<h3>Hello "+name+".</h3>");
-
         int grade = Integer.parseInt(request.getParameter("grade"));
-        out.println("<h3>Hello "+name +". Your grade is a "+grade+".</h3>");
+        out.println("<h3>Hello "+name+". Your grade is a "+grade+".</h3>");
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
