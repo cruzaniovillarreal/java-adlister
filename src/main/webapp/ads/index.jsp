@@ -16,7 +16,7 @@
 <body>
 
 <c:forEach var="ad" items="${ads}">
-    <p>${ad.title}</p>
+    <p>${ad.title.toUpperCase()}</p>
     <p>${ad.description}</p>
 </c:forEach>
 
